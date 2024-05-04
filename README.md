@@ -8,7 +8,7 @@
 Install using Fisher:
 
 ```console
-fisher install gazorby/fish-eza
+fisher install CaiNiao-Yi/fish-eza
 ```
 
 ## 🔧 Usage
@@ -37,11 +37,7 @@ An extended alias is one of the form `<BASE ALIAS><SUFFIX>` with suffix from the
 | `d`           | `--only-dirs`                              |
 | `aa`          | `--all --binary --all`                     |
 | `ad`          | `--all --binary --only-dirs`               |
-| `ai`          | `--all --binary --icons`                   |
-| `aid`         | `--all --binary --icons --only-dirs`       |
 | `aad`         | `--all --binary --all --only-dirs`         |
-| `aai`         | `--all --binary --all --icons`             |
-| `aaid`        | `--all --binary --all --icons --only-dirs` |
 
 Any of these suffixes appended to any previous base alias is a valid alias too (eg: `ll + a => lla`).
 
@@ -81,7 +77,7 @@ To avoid spamming your `config.fish`, you can set environment variables using `s
 
 default eza options used in all aliases except `l`
 
-default : `--group --header --group-directories-first`
+default : `--group --header --group-directories-first --icons=always --color=always`
 
 ### Aliases options
 
